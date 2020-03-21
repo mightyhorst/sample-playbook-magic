@@ -1,0 +1,278 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "title": "TODO - Create a category name",
+            "scenes": [
+                {
+                    "id": 2,
+                    "title": "TODO - Create a scene name",
+                    "steps": [
+                        {
+                            "id": 3,
+                            "title": "step-1",
+                            "gitData": {},
+                            "windowSettings": {
+                                "description": {
+                                    "isClosed": false,
+                                    "top": "0px",
+                                    "left": "0px",
+                                    "width": "45%",
+                                    "height": "100%",
+                                    "transitions": []
+                                },
+                                "code": {
+                                    "isClosed": false,
+                                    "top": "0px",
+                                    "left": "50%",
+                                    "width": "45%",
+                                    "height": "80%",
+                                    "transitions": []
+                                },
+                                "cli": {
+                                    "isClosed": true,
+                                    "bottom": "0px",
+                                    "left": "50%",
+                                    "width": "45%",
+                                    "height": "20%",
+                                    "transitions": []
+                                }
+                            },
+                            "timeline": [
+                                {
+                                    "id": 4,
+                                    "panel": "description",
+                                    "start": 0,
+                                    "duration": 100,
+                                    "description": [
+                                        {
+                                            "tag": "p",
+                                            "txt": "This is the start of the\nnodegit-tester repo"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 5,
+                                    "panel": "code",
+                                    "start": 100,
+                                    "duration": 100,
+                                    "code": {
+                                        "template": "step-1/code/init-file.hbs",
+                                        "partial_sections": [],
+                                        "output": "init-file.txt"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 6,
+                            "title": "step-2",
+                            "gitData": {},
+                            "windowSettings": {
+                                "description": {
+                                    "isClosed": false,
+                                    "top": "0px",
+                                    "left": "0px",
+                                    "width": "45%",
+                                    "height": "100%",
+                                    "transitions": []
+                                },
+                                "code": {
+                                    "isClosed": false,
+                                    "top": "0px",
+                                    "left": "50%",
+                                    "width": "45%",
+                                    "height": "80%",
+                                    "transitions": []
+                                },
+                                "cli": {
+                                    "isClosed": true,
+                                    "bottom": "0px",
+                                    "left": "50%",
+                                    "width": "45%",
+                                    "height": "20%",
+                                    "transitions": []
+                                }
+                            },
+                            "timeline": [
+                                {
+                                    "id": 7,
+                                    "panel": "code",
+                                    "start": 0,
+                                    "duration": 100,
+                                    "code": {
+                                        "template": "step-2/code/features/cool/CoolFeature.hbs",
+                                        "partial_sections": [],
+                                        "output": "features/cool/CoolFeature.js"
+                                    }
+                                },
+                                {
+                                    "id": 8,
+                                    "panel": "cli",
+                                    "start": 0,
+                                    "duration": 100,
+                                    "cmds": [
+                                        {
+                                            "execute": "git checkout -b feature/cool"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": 9,
+                            "title": "step-3",
+                            "gitData": {},
+                            "windowSettings": {
+                                "description": {
+                                    "isClosed": false,
+                                    "top": "0px",
+                                    "left": "0px",
+                                    "width": "45%",
+                                    "height": "100%",
+                                    "transitions": []
+                                },
+                                "code": {
+                                    "isClosed": false,
+                                    "top": "0px",
+                                    "left": "50%",
+                                    "width": "45%",
+                                    "height": "80%",
+                                    "transitions": []
+                                },
+                                "cli": {
+                                    "isClosed": true,
+                                    "bottom": "0px",
+                                    "left": "50%",
+                                    "width": "45%",
+                                    "height": "20%",
+                                    "transitions": []
+                                }
+                            },
+                            "timeline": [
+                                {
+                                    "id": 10,
+                                    "panel": "code",
+                                    "start": 0,
+                                    "duration": 100,
+                                    "code": {
+                                        "template": "step-3/code/features/cool/CoolFeature.hbs",
+                                        "partial_sections": [
+                                            {
+                                                "partial_id": "partial_1",
+                                                "start": 0,
+                                                "duration": 100,
+                                                "template": "step-3/code/features/cool/CoolFeature_partials/partial_1.hbs",
+                                                "template_data": {}
+                                            },
+                                            {
+                                                "partial_id": "partial_2",
+                                                "start": 100,
+                                                "duration": 100,
+                                                "template": "step-3/code/features/cool/CoolFeature_partials/partial_2.hbs",
+                                                "template_data": {}
+                                            },
+                                            {
+                                                "partial_id": "partial_3",
+                                                "start": 200,
+                                                "duration": 100,
+                                                "template": "step-3/code/features/cool/CoolFeature_partials/partial_3.hbs",
+                                                "template_data": {}
+                                            }
+                                        ],
+                                        "output": "features/cool/CoolFeature.js"
+                                    }
+                                },
+                                {
+                                    "id": 11,
+                                    "panel": "code",
+                                    "start": 100,
+                                    "duration": 100,
+                                    "code": {
+                                        "template": "step-3/code/service/ValidationService.hbs",
+                                        "partial_sections": [],
+                                        "output": "service/ValidationService.js"
+                                    }
+                                },
+                                {
+                                    "id": 12,
+                                    "panel": "cli",
+                                    "start": 0,
+                                    "duration": 100,
+                                    "cmds": [
+                                        {
+                                            "execute": "git checkout -b feature/cool-validation"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": 13,
+                            "title": "step-4",
+                            "gitData": {},
+                            "windowSettings": {
+                                "description": {
+                                    "isClosed": false,
+                                    "top": "0px",
+                                    "left": "0px",
+                                    "width": "45%",
+                                    "height": "100%",
+                                    "transitions": []
+                                },
+                                "code": {
+                                    "isClosed": false,
+                                    "top": "0px",
+                                    "left": "50%",
+                                    "width": "45%",
+                                    "height": "80%",
+                                    "transitions": []
+                                },
+                                "cli": {
+                                    "isClosed": true,
+                                    "bottom": "0px",
+                                    "left": "50%",
+                                    "width": "45%",
+                                    "height": "20%",
+                                    "transitions": []
+                                }
+                            },
+                            "timeline": [
+                                {
+                                    "id": 14,
+                                    "panel": "code",
+                                    "start": 0,
+                                    "duration": 100,
+                                    "code": {
+                                        "template": "step-4/code/features/cool/CoolFeature.hbs",
+                                        "partial_sections": [
+                                            {
+                                                "partial_id": "partial_1",
+                                                "start": 0,
+                                                "duration": 100,
+                                                "template": "step-4/code/features/cool/CoolFeature_partials/partial_1.hbs",
+                                                "template_data": {}
+                                            }
+                                        ],
+                                        "output": "features/cool/CoolFeature.js"
+                                    }
+                                },
+                                {
+                                    "id": 15,
+                                    "panel": "cli",
+                                    "start": 0,
+                                    "duration": 100,
+                                    "cmds": [
+                                        {
+                                            "execute": "git checkout -b feature/cool"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
